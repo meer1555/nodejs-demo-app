@@ -1,17 +1,54 @@
-# simple-nodejs-app
+🚀 Node.js CI/CD Pipeline with Docker & GitHub Actions
 
-Simple-nodejs-app is a simple web application created using [Node.js](https://github.com/nodejs/node). It uses [MediaWiki - Wikipedia's Search API](https://www.mediawiki.org/wiki/API:Opensearch) to search for anything entered by the user and parses the result in a JSON format. The infobox of the Wikipedia page is parsed using [wiki-infobox-parser](https://github.com/0x333333/wiki-infobox-parser).
+This project demonstrates a simple Node.js application with a full CI/CD pipeline using GitHub Actions and Docker.
 
-## Download and Installation
+🧰 Tech Stack
 
-- Clone the repo ```https://github.com/rat9615/simple-nodejs-app```
-- [Fork, Clone or Download on Github](https://github.com/rat9615/simple-nodejs-app)
+Node.js – Lightweight HTTP server
+Docker – Containerize the app
+GitHub Actions – CI/CD automation
+DockerHub – Host and pull images
+📦 Setup Instructions
 
-## Usage
+1️⃣ Clone the Repository
 
-- After installation, run ```npm install``` to download and install all the required dependencies.
-- Run ```npm start``` to run the web application.
+git clone https://github.com/mohammed-saifuddin/ci-cd-nodejs-app.git
+cd ci-cd-nodejs-app
+2️⃣ Install Dependencies
 
-## Live Preview
+npm install
+3️⃣ Run the App Locally
 
-To view a live preview of this application, click [here](https://desolate-coast-53201.herokuapp.com/)
+node index.js
+App will run on http://localhost:3000
+
+🧪 Run Tests
+
+npm test
+🐳 Docker Commands
+
+🔨 Build Docker Image
+
+docker build -t mohammed-saifuddin/ci-cd-nodejs-app .
+▶️ Run Docker Container
+
+docker run -p 3000:3000 mohammed-saifuddin/ci-cd-nodejs-app
+📤 Push to DockerHub
+
+docker push mohammed-saifuddin/ci-cd-nodejs-app
+🔄 GitHub Actions: CI/CD Flow
+
+Whenever you push to the main branch:
+
+GitHub Actions will:
+Checkout the code
+Set up Node.js
+Install dependencies
+Run tests
+Build Docker image
+Login to DockerHub
+Push Docker image to DockerHub
+📂 Project Structure
+
+. ├── .github/ │ └── workflows/ │ └── main.yml # GitHub Actions CI/CD workflow ├── Dockerfile # Docker configuration ├── index.js # Main Node.js server ├── package.json # Dependencies and scripts └── README.txt # Project documentation
+
