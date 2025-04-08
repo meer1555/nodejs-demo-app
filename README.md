@@ -5,7 +5,6 @@ Task -1
 This project demonstrates how to automate the build and deployment of a simple Node.js web application using GitHub Actions and DockerHub.
 
 📁 Repository Structure
-.
 ├── .github
 │   └── workflows
 │       └── main.yml      # CI/CD Workflow file
@@ -25,18 +24,6 @@ Runs unit tests
 Builds a Docker image
 
 Pushes the image to DockerHub automatically on every push to the main branch
-
-🔧 Tools Used
-
-GitHub – Version control & repository hosting
-
-GitHub Actions – CI/CD automation platform
-
-Node.js – Runtime for the application
-
-Docker – Containerization platform
-
-DockerHub – Image registry for deployment
 
 🛠️ Setup Instructions
 
@@ -122,7 +109,5 @@ DOCKER_USERNAME
 DOCKER_PASSWORD (or Docker Access Token)
 
 ✅ Step 5: Commit and Push
-
-Make a small change and push to main to trigger the workflow.
 
 
